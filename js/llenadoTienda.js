@@ -11,13 +11,39 @@ let productos=[
     {nombre:"Buso",precio:90000,foto:"img/buso.jpg",descripción:"Buso coleccionable de god of war"},
     {nombre:"Poster God of war",precio:75000,foto:"img/postergodofwar.jpg",descripción:"Poster coleccionable de god of war"},
 ]
+//creo una variable para almacenar la base
+let fila=document.getElementById("fila")
 
 //Recorriendo un arreglo con js
 productos.forEach(function(producto){
-    console.log("Hi :v")
+    console.log(producto)
+    console.log(producto.nombre)
+    console.log(producto.precio)
+    console.log(producto.foto)
+    console.log(producto.descripción)
+
+    //pintar con js
+    //1. se empieza a crear la estructura
+    let columna=document.createElement("div")
+    columna.classList.add("col")
+
+    let tarjeta=document.createElement("div")
+    tarjeta.classList.add("card")
+    tarjeta.classList.add("h-100")
+
+    let foto=document.createElement("img")
+    foto.classList.add("card-img-top")
+    foto.src=producto.foto
+
+    //2. ordenar la estructura 
+    //padres e hijos
+
+    tarjeta.appendChild(foto)
+    columna.appendChild(tarjeta)
+    fila.appendChild(columna)
+
 })
-
-
+/*
 //Escuchando clic en el boton
 let boton=document.getElementById("boton")
 
@@ -28,3 +54,4 @@ function cambiarFoto(){
     let foto=document.getElementById("fotoPrueba")
     foto.src="img/Gamer2.jpg"
 }
+*/
