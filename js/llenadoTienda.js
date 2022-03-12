@@ -41,8 +41,12 @@ productos.forEach(function(producto){
     //Creando un boton
     let boton=document.createElement("button")
     boton.setAttribute("type","button")
-    boton.classList.add("btn","warning","mx-4","mb-4")
+    boton.classList.add("btn","btn-warning","mx-4","mb-4",)
     boton.textContent="ver producto"
+
+    let titulo=document.createElement("title")
+    titulo.classList.add("text")
+    titulo.src=producto.nombre
 
     //2. ordenar la estructura 
     //padres e hijos
@@ -51,6 +55,7 @@ productos.forEach(function(producto){
     columna.appendChild(tarjeta)
     fila.appendChild(columna)
     tarjeta.appendChild(boton)
+    tarjeta.appendChild(titulo)
 
 })
 /*

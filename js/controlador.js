@@ -25,8 +25,12 @@ etiquetaFotokratos.src="img/fondokratos.jpg"*/
 
 import { pintarTienda } from "./llenadoTienda.js";
 pintarTienda()
+import{ampliarInformacion} from "./ampliarinfo.js"
 
 let contenedorTienda=document.getElementById("fila")
 contenedorTienda.addEventListener("click",function(event){
-    console.log(event.target)
+
+    let modalinfoproducto = new bootstrap.Modal(document.getElementById('modalinfoproducto'))
+    ampliarInformacion(event)
+    modalinfoproducto.show()
 })
