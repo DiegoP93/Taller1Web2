@@ -1,3 +1,6 @@
+export function pintarTienda(){
+    
+}
 //arreglo de objetos
 let productos=[
     {nombre:"Kratos",precio:450000,foto:"img/figuraKratos.jpg",descripción:"Figura coleccionable de god of war"},
@@ -35,12 +38,19 @@ productos.forEach(function(producto){
     foto.classList.add("card-img-top")
     foto.src=producto.foto
 
+    //Creando un boton
+    let boton=document.createElement("button")
+    boton.setAttribute("type","button")
+    boton.classList.add("btn","warning","mx-4","mb-4")
+    boton.textContent="ver producto"
+
     //2. ordenar la estructura 
     //padres e hijos
 
     tarjeta.appendChild(foto)
     columna.appendChild(tarjeta)
     fila.appendChild(columna)
+    tarjeta.appendChild(boton)
 
 })
 /*
