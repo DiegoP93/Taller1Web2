@@ -63,11 +63,12 @@ export function pintarTienda(){
         tarjeta.appendChild(titulo)
         tarjeta.appendChild(precio)
         tarjeta.appendChild(descripción)
+        tarjeta.appendChild(boton)
         
     
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
-        tarjeta.appendChild(boton)
+        
     
      })
 }
