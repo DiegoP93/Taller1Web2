@@ -21,6 +21,6 @@ export function ampliarInformacion(event){
         descripción.textContent=producto.descripción 
         
     }
-    
 
+    return producto
 }

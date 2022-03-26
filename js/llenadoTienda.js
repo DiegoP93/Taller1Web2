@@ -33,7 +33,7 @@ export function pintarTienda(){
         tarjeta.classList.add("h-100")
     
         let foto=document.createElement("img")
-        foto.classList.add("card-img-top")
+        foto.classList.add("card-img-top","foto")
         foto.src=producto.foto
     
         //creando titulo
