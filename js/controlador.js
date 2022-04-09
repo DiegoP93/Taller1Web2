@@ -47,13 +47,15 @@ boton.addEventListener("click",function(event){
 
         suma=suma+Number(producto.cantidad)
 
+        pintarCarrito(suma)
+        //modalinfoproducto.hide()
 
     })
     
     pintarCarrito(suma);
 
     let modalinfoproducto = new bootstrap.Modal(document.getElementById('modalinfoproducto'))
-    
+    modalinfoproducto.hide()
    
 })
 

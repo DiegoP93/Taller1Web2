@@ -3,4 +3,5 @@ export function pintarCarrito(suma){
     capsula.textContent=suma
 
     capsula.classList.remove("invisible")
+
 }
