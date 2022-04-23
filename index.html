@@ -75,8 +75,8 @@
                     en el siguiente boton
                 </p>
                 <button class="btn btn-primary btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                   Info
-                  </button>
+                  REGISTRO
+                </button>
             </div>
             <div class="col-4">
                 <img src="img/kratosPixel.png" alt="two" class="img-fluid w-100" id="fotokratos">
@@ -238,12 +238,12 @@
 <section>
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">INFO</h5>
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">REGISTRO</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
 
-          <form>
+          <form id="formularioderegistro">
 
             <div class="mb-3">
               <label class="form-label">Correo</label>
@@ -261,6 +261,21 @@
 
         </div>
       </div>
+</section>
+<section>
+  <div class="modal fade" id="modalinformativo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">JD</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="informaciongeneral" class="text-dark"></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <footer>
   <div class="container">
